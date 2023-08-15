@@ -1,7 +1,7 @@
 // import FinishScreen from "./FinishScreen";
 
 function NextQuestion({ dispatch, answer, numQuestions, index }) {
-  if (answer == null) return null;
+  if (answer === null) return null;
 
   if (index < numQuestions - 1)
     return (
@@ -12,7 +12,7 @@ function NextQuestion({ dispatch, answer, numQuestions, index }) {
         Next
       </button>
     );
-
+  console.log(answer);
   if (index === numQuestions - 1)
     return (
       <button
